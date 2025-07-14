@@ -1,0 +1,127 @@
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1f2937;
+  text-align: center;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.userCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.userCard.topThree {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #f59e0b;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: 20px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.userInfo {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.userName {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.userEmail {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.points {
+  text-align: right;
+}
+
+.pointsValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  display: block;
+}
+
+.pointsLabel {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .userCard {
+    padding: 15px;
+  }
+
+  .rank {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    min-width: 40px;
+  }
+
+  .userName {
+    font-size: 1rem;
+  }
+
+  .pointsValue {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .userCard {
+    padding: 12px;
+  }
+
+  .rank {
+    margin-right: 10px;
+    min-width: 35px;
+  }
+
+  .userEmail {
+    font-size: 0.8rem;
+  }
+}

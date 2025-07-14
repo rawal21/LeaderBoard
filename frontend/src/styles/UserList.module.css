@@ -1,0 +1,45 @@
+.container {
+  margin-bottom: 25px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: white;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.select:hover {
+  border-color: #d1d5db;
+}
+
+.select option {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .select {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+}
