@@ -2,7 +2,7 @@
 import axios from "axios"
 import type { User, HistoryEntry, ClaimPointsResponse } from "../types"
 
-const BASE_URL = "http://localhost:3000/api" // change to live backend URL when deployed
+const BASE_URL = "https://leaderboard-n54h.onrender.com/api" // change to live backend URL when deployed
 
 export const getUsers = async (): Promise<User[]> => {
   const res = await axios.get(`${BASE_URL}/users`)
